@@ -37,6 +37,19 @@ export default function EditorScreen({ client, clientNumber, totalClients, onDon
             'image_editor.toolbar.save': 'Finish Piece',
             },
         },
+        features: {
+            imageEditor: {
+            tools: {
+                filter: { icon: 'droplet' },
+                crop: { icon: 'crop' },
+                draw: { icon: 'pen-nib' },
+                text: { icon: 'font' },
+                shapes: { icon: 'shapes' },
+                stickers: { icon: 'star' },
+                frame: { icon: 'square' },
+            },
+            },
+        },
         }}
         onSave={handleSave}
         onError={(err) => console.error('Editor error:', err)}

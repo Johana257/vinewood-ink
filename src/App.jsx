@@ -43,7 +43,12 @@ function App() {
     <div className="app">
       {screen === 'menu' && <MenuScreen onStart={() => setScreen('editor')} />}
       {screen === 'editor' && (
-        <EditorScreen client={currentClient} onDone={handleTattooDone} />
+        <EditorScreen
+          client={currentClient}
+          clientNumber={clientIndex + 1}
+          totalClients={clients.length}
+          onDone={handleTattooDone}
+        />
       )}
       {screen === 'reaction' && (
         <ReactionScreen result={lastResult} onNext={handleReactionContinue} />

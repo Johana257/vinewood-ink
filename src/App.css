@@ -3,9 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at top, #1a1030 0%, #0d0d0f 70%);
   color: #f4ede4;
   padding: 1rem;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,59,127,0.15), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(80,120,255,0.15), transparent 40%),
+    radial-gradient(circle at top, #1a1030 0%, #0d0d0f 70%);
 }
 .screen {
   text-align: center;
@@ -80,4 +83,18 @@ button:hover {
 .client-request {
   font-style: italic;
   opacity: 0.85;
+}
+.shift-progress {
+  width: 100%;
+  max-width: 400px;
+  height: 6px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  margin: 0 auto 1rem;
+  overflow: hidden;
+}
+.shift-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ff3b7f, #ff8a5c);
+  transition: width 0.4s ease;
 }

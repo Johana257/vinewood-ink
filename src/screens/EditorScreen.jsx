@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import ImageEditor from '@unlayer/react-image-editor';
 
-export default function EditorScreen({ client, onDone }) {
+export default function EditorScreen({ client, clientNumber, totalClients, onDone }) {
   const editorRef = useRef(null);
 
   const handleSave = ({ dataUrl }) => {
@@ -10,11 +10,14 @@ export default function EditorScreen({ client, onDone }) {
 
   return (
     <div className="editor-wrap">
-        <div className="client-brief">
-        <p className="client-label">Now serving</p>
-        <h2>{client.name}</h2>
-        <p className="client-request">{client.request}</p>
-        </div>
+    <div className="shift-progress">
+    <div className="shift-progress-bar" style={{ width: `${(clientNumber / totalClients) * 100}%` }} />
+    </div>
+    <div className="client-brief">
+    <p className="client-label">Client {clientNumber} of {totalClients}</p>
+    <h2>{client.name}</h2>
+    <p className="client-request">{client.request}</p>
+    </div>
         <ImageEditor
         ref={editorRef}
         image={client.image}

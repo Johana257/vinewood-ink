@@ -153,11 +153,7 @@ button:hover {
 }
 .ink-overlay {
   position: absolute;
-  top: 15%;
-  left: 18%;
-  width: 55%;
   height: auto;
-  transform: rotate(-5deg);
   opacity: 0;
   mix-blend-mode: multiply;
   filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5)) saturate(1.1);
@@ -165,6 +161,18 @@ button:hover {
 }
 .ink-overlay.shown {
   opacity: 0.92;
+}
+.ink-overlay.male {
+  top: 15%;
+  left: 18%;
+  width: 55%;
+  transform: rotate(-5deg);
+}
+.ink-overlay.female {
+  top: 48%;
+  left: 55%;
+  width: 32%;
+  transform: rotate(3deg);
 }
 .flash {
   position: absolute;

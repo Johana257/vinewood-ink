@@ -21,6 +21,11 @@ If you are developing a production application, we recommend using TypeScript wi
   https://www.pexels.com/photo/bare-shoulder-of-a-muscular-man-8875069/
   Used under the Pexels License (free for commercial & personal use).
 
+- Photo: "A close-up of an Asian woman outdoors, showcasing a unique tree tattoo
+  on her back" by thuankieu le, via Pexels
+  https://www.pexels.com/photo/woman-with-tattoo-on-her-back-12495337/
+  Used under the Pexels License (free for commercial & personal use).
+
 ## AI-assisted development
 
 Claude (Anthropic) was used for coding, debugging, and implementation throughout this project.

@@ -17,12 +17,16 @@ function skinArm(tone, shadow) {
 // Same path used above — reused later to "cut out" just the arm from the finished edit
 export const ARM_CLIP_PATH =
   'M 220 30 Q 180 30 175 80 L 165 300 Q 160 350 220 360 L 340 360 Q 400 350 395 300 L 385 80 Q 380 30 340 30 Z';
-export const REVEAL_PHOTO_URL =
+export const REVEAL_PHOTO_URL_MALE =
   'https://images.pexels.com/photos/8875069/pexels-photo-8875069.jpeg?auto=compress&cs=tinysrgb&w=1200';
+
+export const REVEAL_PHOTO_URL_FEMALE =
+  'https://images.pexels.com/photos/12495337/pexels-photo-12495337.jpeg?auto=compress&cs=tinysrgb&w=1200';
 export const clients = [
   {
     id: 1,
     name: 'Marco',
+    revealPhoto: 'male',
     personality: 'Loud, dramatic, wants to be noticed',
     request: '"Something that says freedom. Go big. Surprise me."',
     image: skinArm('#d9a066', '#a8703f'),
@@ -39,6 +43,7 @@ export const clients = [
   {
     id: 2,
     name: 'Priya',
+    revealPhoto: 'female',
     personality: 'Careful, sentimental, wants subtlety',
     request: '"Cover up my ex\'s name. Make it beautiful, not loud."',
     image: skinArm('#e8b88a', '#b8825a'),
@@ -55,6 +60,7 @@ export const clients = [
   {
     id: 3,
     name: 'Dex',
+    revealPhoto: 'male',
     personality: 'Confident, wants a bold statement piece',
     request: '"My lucky number. Big, bold, can\'t-miss-it."',
     image: skinArm('#c68863', '#925f3f'),
@@ -71,6 +77,7 @@ export const clients = [
   {
     id: 4,
     name: 'Sunny',
+    revealPhoto: 'female',
     personality: 'Easygoing, just wants a classic flash piece',
     request: '"A flash-sheet classic. Whatever you\'ve got, I trust you."',
     image: skinArm('#f0c9a0', '#c49868'),

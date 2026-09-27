@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import { ARM_CLIP_PATH, REVEAL_PHOTO_URL } from '../data/clients';
+import { ARM_CLIP_PATH, REVEAL_PHOTO_URL_MALE, REVEAL_PHOTO_URL_FEMALE } from '../data/clients';
 
 export default function ReactionScreen({ result, reputation, clientNumber, totalClients, onNext }) {
   const [revealed, setRevealed] = useState(false);
   const [showStats, setShowStats] = useState(false);
   const { client, image, band, craftScore, tip, quote } = result;
-
+  const photoUrl = client.revealPhoto === 'female' ? REVEAL_PHOTO_URL_FEMALE : REVEAL_PHOTO_URL_MALE;
   useEffect(() => {
     const t1 = setTimeout(() => setRevealed(true), 600);
     const t2 = setTimeout(() => setShowStats(true), 1600);
@@ -20,9 +20,11 @@ export default function ReactionScreen({ result, reputation, clientNumber, total
 
       <div className="reveal-stage">
         {!revealed && <div className="flash" />}
-        <img src={REVEAL_PHOTO_URL} alt="client arm" className="reveal-photo" />
-        <svg viewBox="0 0 600 400" className={`ink-overlay ${revealed ? 'shown' : ''}`}>
-          <defs>
+        <img src={photoUrl} alt="client" className="reveal-photo" />
+        <svg
+          viewBox="0 0 600 400"
+          className={`ink-overlay ${client.revealPhoto === 'female' ? 'female' : 'male'} ${revealed ? 'shown' : ''}`}
+        >          <defs>
             <clipPath id="inkClip">
               <path d={ARM_CLIP_PATH} />
             </clipPath>

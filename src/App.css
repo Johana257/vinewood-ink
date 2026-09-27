@@ -163,16 +163,22 @@ button:hover {
   opacity: 0.92;
 }
 .ink-overlay.male {
-  top: 15%;
-  left: 18%;
-  width: 55%;
+  top: 17%;
+  left: 33%;
+  width: 22%;
   transform: rotate(-5deg);
 }
 .ink-overlay.female {
-  top: 48%;
-  left: 55%;
-  width: 32%;
-  transform: rotate(3deg);
+  top: 62%;
+  left: 76%;
+  width: 22%;
+  transform: rotate(-5deg);
+  mix-blend-mode: soft-light;
+  opacity: 1;
+  filter: contrast(1.5);
+}
+.ink-overlay.female.shown {
+  opacity: 0.85;
 }
 .flash {
   position: absolute;

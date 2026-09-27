@@ -21,10 +21,11 @@ export default function ReactionScreen({ result, reputation, clientNumber, total
       <div className="reveal-stage">
         {!revealed && <div className="flash" />}
         <img src={photoUrl} alt="client" className="reveal-photo" />
-        <svg
-          viewBox="0 0 600 400"
-          className={`ink-overlay ${client.revealPhoto === 'female' ? 'female' : 'male'} ${revealed ? 'shown' : ''}`}
-        >          <defs>
+      <svg
+        viewBox="160 30 240 330"
+        className={`ink-overlay ${client.revealPhoto === 'female' ? 'female' : 'male'} ${revealed ? 'shown' : ''}`}
+      >
+          <defs>
             <clipPath id="inkClip">
               <path d={ARM_CLIP_PATH} />
             </clipPath>

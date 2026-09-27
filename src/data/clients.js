@@ -17,7 +17,8 @@ function skinArm(tone, shadow) {
 // Same path used above — reused later to "cut out" just the arm from the finished edit
 export const ARM_CLIP_PATH =
   'M 220 30 Q 180 30 175 80 L 165 300 Q 160 350 220 360 L 340 360 Q 400 350 395 300 L 385 80 Q 380 30 340 30 Z';
-
+export const REVEAL_PHOTO_URL =
+  'https://images.pexels.com/photos/8875069/pexels-photo-8875069.jpeg?auto=compress&cs=tinysrgb&w=1200';
 export const clients = [
   {
     id: 1,

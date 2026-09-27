@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ARM_CLIP_PATH } from '../data/clients';
+import { ARM_CLIP_PATH, REVEAL_PHOTO_URL } from '../data/clients';
 
 export default function ReactionScreen({ result, reputation, clientNumber, totalClients, onNext }) {
   const [revealed, setRevealed] = useState(false);
@@ -20,21 +20,14 @@ export default function ReactionScreen({ result, reputation, clientNumber, total
 
       <div className="reveal-stage">
         {!revealed && <div className="flash" />}
-        <svg viewBox="0 0 600 500" className="reveal-svg">
+        <img src={REVEAL_PHOTO_URL} alt="client arm" className="reveal-photo" />
+        <svg viewBox="0 0 600 400" className={`ink-overlay ${revealed ? 'shown' : ''}`}>
           <defs>
-            <clipPath id="armClip">
+            <clipPath id="inkClip">
               <path d={ARM_CLIP_PATH} />
             </clipPath>
           </defs>
-          <rect width="600" height="500" fill="#1a1030" />
-          <circle cx="280" cy="90" r="55" fill="#d9a066" />
-          <rect x="180" y="140" width="200" height="150" rx="30" fill={client.shirt} />
-          <image
-            href={image}
-            x="0" y="0" width="600" height="400"
-            clipPath="url(#armClip)"
-            className={`reveal-arm ${revealed ? 'shown' : ''}`}
-          />
+          <image href={image} width="600" height="400" clipPath="url(#inkClip)" />
         </svg>
       </div>
 

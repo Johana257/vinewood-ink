@@ -257,3 +257,45 @@ button:hover {
 }
 .credits-box a { color: #ff8a5c; }
 .ai-note { margin-top: 0.5rem; font-style: italic; opacity: 0.8; }
+.mission-intro {
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+.mission-label {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  color: #f5d90a;
+  text-transform: uppercase;
+  border-top: 2px solid #f5d90a;
+  border-bottom: 2px solid #f5d90a;
+  padding: 0.4rem 0;
+  display: inline-block;
+}
+.mission-title {
+  font-size: 4rem;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+.mission-brief {
+  font-style: italic;
+  opacity: 0.85;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.location-tag {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #00e5ff;
+  opacity: 0.7;
+  margin-top: 0.2rem;
+}
+.job-complete {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  color: #f5d90a;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}

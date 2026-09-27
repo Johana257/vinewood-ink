@@ -37,6 +37,7 @@ export default function ReactionScreen({ result, reputation, clientNumber, total
       <h2>{client.name}</h2>
 
       <div className={`stats-card ${showStats ? 'shown' : ''}`}>
+        <p className="job-complete">JOB COMPLETE</p>
         <p className="quote">"{quote}"</p>
         <div className="stat-row">
           <span>Craft Score</span>

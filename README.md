@@ -1,19 +1,42 @@
-# React + Vite
+# Vinewood Ink — A GTA VI Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_Vinewood Ink_ drops you into Leonida — the world of GTA VI — not as a criminal,
+but as the newest tattoo artist at a hole-in-the-wall Vinewood ink shop. No
+heists, no cops. Just a chair, a client, and whatever you're willing to put
+on their skin.
 
-Currently, two official plugins are available:
+## The premise
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Word's out you're good with a needle. Over one shift, four clients walk
+through the door, each with their own read on what "good" means:
 
-## React Compiler
+- **Marco** — loud, wants something people can't ignore
+- **Priya** — careful, wants an old name gone and something beautiful in its place
+- **Dex** — confident, wants a bold statement piece
+- **Sunny** — easygoing, just wants a flash-sheet classic done right
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+You don't get a script. You get their words, a blank patch of skin, and the
+tools to make the call yourself.
 
-## Expanding the ESLint configuration
+## How the React Image Editor drives it
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The editor isn't a reskinned demo bolted onto a game — it **is** the game.
+Every tool on the rail is your actual tattoo equipment: Draw is your
+needle, Shapes and Stickers are your flash sheet and stencils, Text is
+lettering work, Filter is the final finish on the piece. What you create
+inside the editor is measured against what that specific client actually
+wanted — go too far for Priya's subtlety, go too soft for Marco's "make it
+loud," and it shows in their reaction. The finished edit isn't just shown
+back to you afterward — it's composited directly onto a real photo of the
+client's body for the reveal, so the exact piece you made is what they
+walk out wearing.
+
+## The loop
+
+Client walks in → brief → you build the piece in the editor → reveal on
+their skin → tip, review, and reputation → next client → shift complete.
+
+Four jobs. One shift. Your linework, your call.
 
 ## Assets & Credits
 

@@ -5,10 +5,38 @@
   justify-content: center;
   color: #f4ede4;
   padding: 1rem;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(255,59,127,0.15), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(80,120,255,0.15), transparent 40%),
-    radial-gradient(circle at top, #1a1030 0%, #0d0d0f 70%);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #1a0b2e 0%, #3b0764 30%, #a8267a 60%, #ff6b35 100%);
+}
+.app::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255,255,255,0.02) 0px,
+    rgba(255,255,255,0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+}
+.app::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background-image:
+    linear-gradient(rgba(0,255,255,0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+  transform: perspective(300px) rotateX(60deg);
+  transform-origin: bottom;
+  pointer-events: none;
+  mask-image: linear-gradient(to top, black 20%, transparent 90%);
 }
 .screen {
   text-align: center;
@@ -24,19 +52,21 @@ button {
   margin-top: 1rem;
   padding: 0.7rem 1.6rem;
   font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
   cursor: pointer;
-  background: #ff3b7f;
-  color: #fff;
+  background: linear-gradient(90deg, #ff2fb0, #00e5ff);
+  color: #0d0d0f;
   border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: transform 0.15s ease, background 0.15s ease;
+  border-radius: 3px;
+  font-weight: 700;
+  clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
+  transition: transform 0.15s ease, filter 0.15s ease;
 }
 button:hover {
-  background: #ff5c95;
+  filter: brightness(1.15);
   transform: translateY(-2px);
 }
-
 .editor-wrap {
   width: 100%;
   max-width: 900px;
@@ -97,6 +127,10 @@ button:hover {
   height: 100%;
   background: linear-gradient(90deg, #ff3b7f, #ff8a5c);
   transition: width 0.4s ease;
+}
+.shift-progress-bar,
+.stat-fill {
+  background: linear-gradient(90deg, #ff2fb0, #00e5ff);
 }
 
 .reveal-stage {
@@ -198,6 +232,14 @@ button:hover {
   color: #aaa;
   max-width: 400px;
   text-align: left;
+}
+.tagline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #ff8a5c;
+  opacity: 0.8;
+  margin-top: -0.5rem;
 }
 .credits-box a { color: #ff8a5c; }
 .ai-note { margin-top: 0.5rem; font-style: italic; opacity: 0.8; }

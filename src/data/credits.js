@@ -13,6 +13,13 @@ export const credits = [
     source: 'https://www.pexels.com/photo/woman-with-tattoo-on-her-back-12495337/',
     license: 'Pexels License (free for commercial & personal use)',
   },
+  {
+  type: 'Photo',
+  title: 'Silhouette of Palm Trees during Sunset',
+  author: 'Splatter',
+  source: 'https://www.pexels.com/photo/silhouette-of-palm-trees-during-sunset-103584/',
+  license: 'Pexels License (free for commercial & personal use)',
+},
 ];
 
 export const aiDisclosure =

@@ -27,6 +27,14 @@ export default function MenuScreen({ onStart }) {
           <p className="ai-note">{aiDisclosure}</p>
         </div>
       )}
+          <svg className="palm-accent" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 140 L50 60" stroke="#00e5ff" strokeWidth="3" fill="none" />
+      <path d="M50 65 Q20 40 5 50" stroke="#ff2fb0" strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path d="M50 60 Q15 55 8 75" stroke="#ff2fb0" strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path d="M50 60 Q80 45 95 55" stroke="#00e5ff" strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path d="M50 55 Q85 60 92 80" stroke="#00e5ff" strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path d="M50 62 Q55 30 40 10" stroke="#ff2fb0" strokeWidth="3" fill="none" strokeLinecap="round" />
+    </svg>
     </div>
   );
 }

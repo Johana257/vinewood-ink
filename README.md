@@ -49,6 +49,10 @@ Four jobs. One shift. Your linework, your call.
   https://www.pexels.com/photo/woman-with-tattoo-on-her-back-12495337/
   Used under the Pexels License (free for commercial & personal use).
 
+- Photo: "Silhouette of Palm Trees during Sunset" by Splatter, via Pexels
+  https://www.pexels.com/photo/silhouette-of-palm-trees-during-sunset-103584/
+  Used under the Pexels License (free for commercial & personal use).
+
 ## AI-assisted development
 
 Claude (Anthropic) was used for coding, debugging, and implementation throughout this project.
